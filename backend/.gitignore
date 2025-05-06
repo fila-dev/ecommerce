@@ -1,0 +1,25 @@
+# Dependencies
+node_modules
+package-lock.json
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Uploads
+uploads/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Runtime
+.DS_Store
+.vscode
+.idea
+
+# Build
+dist
+build 
