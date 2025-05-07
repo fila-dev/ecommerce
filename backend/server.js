@@ -36,7 +36,7 @@ const app = express();
 //middleware
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
-    ? ['https://your-frontend-domain.com'] // Replace with your frontend domain
+    ? ['https://ecommerce-vaei.vercel.app/'] // Replace with your frontend domain
     : ['http://localhost:5173'],
   credentials: true
 }));
