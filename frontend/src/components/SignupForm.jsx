@@ -55,7 +55,7 @@ export function SignupForm() {
     }
 
     try {
-        const response = await fetch("/api/user/signup", {
+        const response = await fetch("https://ecommerce-qvtp.onrender.com/api/user/signup", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             credentials: 'include',
@@ -94,7 +94,7 @@ export function SignupForm() {
     }
 
     try {
-        const response = await fetch("/api/otp/verify", {
+        const response = await fetch("https://ecommerce-qvtp.onrender.com/api/otp/verify", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -131,7 +131,7 @@ export function SignupForm() {
     }
 
     try {
-        const response = await fetch("/api/user/update-details", {
+        const response = await fetch("https://ecommerce-qvtp.onrender.com/api/user/update-details", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -302,7 +302,7 @@ export function SignupForm() {
                 onClick={async () => {
                   try {
                     const response = await fetch(
-                      "/api/otp/request-otp",
+                      "https://ecommerce-qvtp.onrender.com/api/otp/request-otp",
                       {
                         method: "POST",
                         headers: { "Content-Type": "application/json" },
