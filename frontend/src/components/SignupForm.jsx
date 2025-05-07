@@ -55,7 +55,7 @@ export function SignupForm() {
     }
 
     try {
-        const response = await fetch("${import.meta.env.VITE_API_BASE_URL}/api/user/signup", {
+        const response = await fetch("/api/user/signup", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             credentials: 'include',
@@ -94,7 +94,7 @@ export function SignupForm() {
     }
 
     try {
-        const response = await fetch("${import.meta.env.VITE_API_BASE_URL}/api/otp/verify", {
+        const response = await fetch("/api/otp/verify", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -131,7 +131,7 @@ export function SignupForm() {
     }
 
     try {
-        const response = await fetch("${import.meta.env.VITE_API_BASE_URL}/api/user/update-details", {
+        const response = await fetch("/api/user/update-details", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -302,7 +302,7 @@ export function SignupForm() {
                 onClick={async () => {
                   try {
                     const response = await fetch(
-                      "${import.meta.env.VITE_API_BASE_URL}/api/otp/request-otp",
+                      "/api/otp/request-otp",
                       {
                         method: "POST",
                         headers: { "Content-Type": "application/json" },
