@@ -23,7 +23,11 @@ export default defineConfig({
         target: 'https://ecommerce-qvtp.onrender.com',
         changeOrigin: true,
         secure: false,
+        rewrite: (path) => path.replace(/^\/api/, '/api')
       },
     },
   },
+  define: {
+    'process.env.VITE_API_BASE_URL': JSON.stringify('https://ecommerce-qvtp.onrender.com')
+  }
 })
