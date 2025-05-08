@@ -11,7 +11,7 @@ export const useSignup = () => {
     setError(null);
     try {
       // First attempt signup
-      const response = await fetch("${import.meta.env.VITE_API_BASE_URL}/api/user/signup", {
+      const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/user/signup`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password, accountType }),
