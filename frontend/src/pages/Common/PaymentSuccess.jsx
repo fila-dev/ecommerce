@@ -96,7 +96,7 @@ const PaymentSuccess = () => {
         console.log("Purchase data being sent:", JSON.stringify(purchaseData, null, 2));
 
         const response = await fetch(
-          "${import.meta.env.VITE_API_BASE_URL}/api/purchasehistory/create",
+          `${import.meta.env.VITE_API_BASE_URL}/api/purchasehistory/create`,
           {
             method: "POST",
             headers: {
