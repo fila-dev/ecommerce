@@ -47,7 +47,7 @@ const Cart = () => {
       console.log("Sending payment request:", paymentData);
 
       const response = await fetch(
-        "${import.meta.env.VITE_API_BASE_URL}/api/payment/create-payment-intent",
+        `${import.meta.env.VITE_API_BASE_URL}/api/payment/create-payment-intent`,
         {
           method: "POST",
           headers: {
