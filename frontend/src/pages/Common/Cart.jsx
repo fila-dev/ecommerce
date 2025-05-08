@@ -80,7 +80,7 @@ const Cart = () => {
             name: item.name,
             price: item.price,
             quantity: item.quantity,
-            image: item.image,
+            image: item.images && item.images.length > 0 ? item.images[0] : '',
           })),
         },
       });
@@ -132,7 +132,7 @@ const Cart = () => {
             >
               <div className="h-32 w-32 flex-shrink-0 overflow-hidden rounded-md">
                 <img
-                  src={item.image}
+                  src={item.images && item.images.length > 0 ? item.images[0] : ''}
                   alt={item.name}
                   className="h-full w-full object-contain"
                 />
